@@ -1,0 +1,45 @@
+:host {
+  .container {
+    color: var(--primary-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-flow: column;
+
+      button {
+        border: none;
+        border-radius: 0.5rem;
+        background: #1c153480;
+        color: #ccccccdd;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.6rem 1.2rem;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(180deg, #ffb15788 0%, #1c153488 100%);
+        }
+
+        &:active {
+          background: linear-gradient(180deg, #ffb157aa 20%, #1c153480 90%);
+          opacity: 0.85;
+        }
+
+        &:nth-child(n) {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+}
